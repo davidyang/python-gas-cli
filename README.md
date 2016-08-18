@@ -11,9 +11,11 @@ This is a CLI utility for "deploying" Google Apps Script code. Normally Google A
 ## Configure OAuth Client
 
 1. Go to the [Google Developers Console](https://console.developers.google.com/) and create a new project.
-2. Go to that project and then "APIs & auth > Credentials".
-3. Under OAuth click the "Create new Client ID" button.
-4. Under "Application Type" select "Installed application" and choose "Other" for "Installed Application Type". **NOTE:** Once created it will be labeled "Client ID for _native_ application".
+2. Add the Google Drive API and Enable it.
+2. Go to that project and then "API Manager > Credentials".
+3. Under the "Credentials" tab select the "OAuth client ID" option.
+4. You'll need to create a Consent Screen
+4. Under "Application Type" select "Other" and type in "Python GAS" **NOTE:** Once created it will be labeled "Client ID for _native_ application".
 5. Click the "Download JSON" button to fetch your "client secrets file". **IMPORTANT:** Save this file somewhere safe. It will be needed every time you call the `gas` application.
 
 ## Authorize `gas` Application
